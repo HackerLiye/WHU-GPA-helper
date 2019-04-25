@@ -1,23 +1,23 @@
 function convertScoretoGPA(score){
     if(90 <= score && score <= 100){
         return 4.0;
-    }else if(85 <= score && score <= 89){
+    }else if(85 <= score && score < 90){
         return 3.7;
-    }else if(82 <= score && score <= 84){
+    }else if(82 <= score && score < 85){
         return 3.3;
-    }else if(78 <= score && score <= 81){
+    }else if(78 <= score && score < 82){
         return 3.0;
-    }else if(75 <= score && score <= 77){
+    }else if(75 <= score && score < 78){
         return 2.7;
-    }else if(72 <= score && score <= 74){
+    }else if(72 <= score && score < 75){
         return 2.3;
-    }else if(68 <= score && score <= 71){
+    }else if(68 <= score && score < 72){
         return 2.0;
-    }else if(64 <= score && score <= 67){
+    }else if(64 <= score && score < 68){
         return 1.5;
-    }else if(60 <= score && score <= 63){
+    }else if(60 <= score && score < 64){
         return 1.0;
-    }else if(0 <= score && score <= 59){
+    }else if(0 <= score && score < 60){
         return 0.0;
     }else{
         return 0.0;
