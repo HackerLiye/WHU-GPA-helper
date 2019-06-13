@@ -18,13 +18,9 @@
         {
           "matches": [
             "http://218.197.150.140/servlet/Svlt_QueryStuScore*",
-            "http://218.197.150.140/stu/stu_index.jsp",
             "http://210.42.121.241/servlet/Svlt_QueryStuScore*",
-            "http://210.42.121.241/stu/stu_index.jsp",
             "http://210.42.121.133/servlet/Svlt_QueryStuScore*",
-            "http://210.42.121.133/stu/stu_index.jsp",
-            "http://210.42.121.134/servlet/Svlt_QueryStuScore*",
-            "http://210.42.121.134/stu/stu_index.jsp"
+            "http://210.42.121.134/servlet/Svlt_QueryStuScore*"
           ],
           "js": ["jquery.js", "main.js", "jquery-ui.min.js"],
           "css": ["jquery-ui.min.css"],
