@@ -3,20 +3,29 @@
   
     "name": "武汉大学成绩助手",
     "description": "教务系统太难用了，试试这个吧！",
-    "version": "1.0",
+    "version": "1.0.1",
   
     "permissions": [
-      "http://218.197.150.140/"
+      "http://218.197.150.140/",
+      "http://210.42.121.241/",
+      "http://210.42.121.133/",
+      "http://210.42.121.134/"
     ],
     "browser_action": {
       "default_icon": "icon.jpg"
     },
-    "background": {
-        "page": "background.html"
-    },
     "content_scripts": [
         {
-          "matches": ["http://218.197.150.140/servlet/Svlt_QueryStuScore*"],
+          "matches": [
+            "http://218.197.150.140/servlet/Svlt_QueryStuScore*",
+            "http://218.197.150.140/stu/stu_index.jsp",
+            "http://210.42.121.241/servlet/Svlt_QueryStuScore*",
+            "http://210.42.121.241/stu/stu_index.jsp",
+            "http://210.42.121.133/servlet/Svlt_QueryStuScore*",
+            "http://210.42.121.133/stu/stu_index.jsp",
+            "http://210.42.121.134/servlet/Svlt_QueryStuScore*",
+            "http://210.42.121.134/stu/stu_index.jsp"
+          ],
           "js": ["jquery.js", "main.js", "jquery-ui.min.js"],
           "css": ["jquery-ui.min.css"],
           "all_frames": true
