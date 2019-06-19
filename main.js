@@ -153,6 +153,8 @@ $(".table").before(
     <button id='select_reverse'>复原</button>\
     <button id='remove_zb'>去除专必</button>\
     <button id='remove_zx'>去除专选</button>\
+    <button id='remove_fx'>去除辅修</button>\
+    <button id='remove_fx'>去除重修</button>\
     <button id='remove_gb'>去除公必</button>\
     <button id='remove_gx'>去除公选</button>\
     <button id='score'></button>\
@@ -193,6 +195,24 @@ $('#remove_zb').click(function(){
 $('#remove_zx').click(function(){
     $(".table tr").each(function(){
         if($.trim($(this).find("td:eq(2)").text()) == '专业选修'){
+            $(this).find("input[type='checkbox']").prop('checked', false);
+        }
+    })
+    showAllScores();
+})
+
+$('#remove_fx').click(function(){
+    $(".table tr").each(function(){
+        if($.trim($(this).find("td:eq(8)").text()) == '辅修'){
+            $(this).find("input[type='checkbox']").prop('checked', false);
+        }
+    })
+    showAllScores();
+})
+
+$('#remove_cx').click(function(){
+    $(".table tr").each(function(){
+        if($.trim($(this).find("td:eq(8)").text()) == '重修'){
             $(this).find("input[type='checkbox']").prop('checked', false);
         }
     })
@@ -259,4 +279,3 @@ $(function(){
     })
     showAllScores();
 })
-
