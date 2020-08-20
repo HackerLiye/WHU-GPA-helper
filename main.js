@@ -184,9 +184,9 @@ $(".table tr").each(function(){
 
 //初始化上方的控制栏
 $(".table").before(
-    "<div style='height:40px' >\
+    "<div style='height:40px'>\
     <button id='select_all'>全选</button>\
-    <button id='select_none'>全不选<</button>\
+    <button id='select_none'>全不选</button>\
     <button id='select_reverse'>复原</button>\
     <button id='remove_zb'>去除专必</button>\
     <button id='remove_zx'>去除专选</button>\
